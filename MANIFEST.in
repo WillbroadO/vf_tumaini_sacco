@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include vf_tumaini_sacco *.css
+recursive-include vf_tumaini_sacco *.csv
+recursive-include vf_tumaini_sacco *.html
+recursive-include vf_tumaini_sacco *.ico
+recursive-include vf_tumaini_sacco *.js
+recursive-include vf_tumaini_sacco *.json
+recursive-include vf_tumaini_sacco *.md
+recursive-include vf_tumaini_sacco *.png
+recursive-include vf_tumaini_sacco *.py
+recursive-include vf_tumaini_sacco *.svg
+recursive-include vf_tumaini_sacco *.txt
+recursive-exclude vf_tumaini_sacco *.pyc
