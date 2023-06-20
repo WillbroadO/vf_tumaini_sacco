@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2023-06-20 11:21:16.706925",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "payroll_number",
+  "employee_name",
+  "sacco_number",
+  "sub_department",
+  "contributions"
+ ],
+ "fields": [
+  {
+   "fieldname": "payroll_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Payroll Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "sacco_number",
+   "fieldtype": "Data",
+   "label": "Sacco Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "sub_department",
+   "fieldtype": "Data",
+   "label": "Sub Department"
+  },
+  {
+   "fieldname": "contributions",
+   "fieldtype": "Link",
+   "label": "Contributions",
+   "options": "Contributions"
+  }
+ ],
+ "links": [],
+ "modified": "2023-06-20 11:48:23.531445",
+ "modified_by": "Administrator",
+ "module": "Vf Tumaini Sacco",
+ "name": "Member",
+ "name_case": "Title Case",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Loan Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
