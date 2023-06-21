@@ -56,7 +56,6 @@
   "column_break_19",
   "total_interest_payable",
   "total_amount_paid",
-  "amended_from",
   "member",
   "contributions",
   "amended_from"
@@ -64,24 +63,25 @@
  "fields": [
   {
    "fieldname": "applicant_type",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Applicant Type",
-   "options": "Employee\nMember\nCustomer",
+   "options": "Member",
    "reqd": 1
   },
   {
    "fieldname": "applicant",
-   "fieldtype": "Dynamic Link",
+   "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "Applicant",
-   "options": "applicant_type",
+   "options": "Member",
    "reqd": 1
   },
   {
    "fieldname": "applicant_name",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_global_search": 1,
    "label": "Applicant Name",
+   "options": "Member",
    "read_only": 1
   },
   {
@@ -147,10 +147,10 @@
   },
   {
    "fieldname": "loan_amount",
-   "fieldtype": "Currency",
+   "fieldtype": "Link",
    "label": "Loan Amount",
    "non_negative": 1,
-   "options": "Company:company:default_currency"
+   "options": "Contributions"
   },
   {
    "fetch_from": "loan_type.rate_of_interest",
@@ -413,7 +413,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Loan",
+   "options": "Sacco loan management",
    "print_hide": 1,
    "read_only": 1
   },
@@ -442,7 +442,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-06-20 12:52:29.462370",
+ "modified": "2023-06-21 11:03:24.410326",
  "modified_by": "Administrator",
  "module": "Vf Tumaini Sacco",
  "name": "Sacco loan management",

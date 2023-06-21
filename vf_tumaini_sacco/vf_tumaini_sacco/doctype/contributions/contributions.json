@@ -10,7 +10,8 @@
   "member",
   "contribution_date",
   "deposit_amount",
-  "saving_amount"
+  "saving_amount",
+  "loan_amount"
  ],
  "fields": [
   {
@@ -33,11 +34,16 @@
    "fieldname": "saving_amount",
    "fieldtype": "Currency",
    "label": "Saving Amount"
+  },
+  {
+   "fieldname": "loan_amount",
+   "fieldtype": "Currency",
+   "label": "Loan Amount"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-20 11:44:56.484956",
+ "modified": "2023-06-21 10:55:35.233408",
  "modified_by": "Administrator",
  "module": "Vf Tumaini Sacco",
  "name": "Contributions",
