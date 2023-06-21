@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestSaccoLoanManagement(FrappeTestCase):
+class TestMemberContributionReport(FrappeTestCase):
 	pass
