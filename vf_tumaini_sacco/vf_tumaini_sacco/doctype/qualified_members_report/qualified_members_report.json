@@ -8,7 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "member",
-  "qualification_criteria"
+  "qualification_criteria",
+  "amended_from"
  ],
  "fields": [
   {
@@ -21,11 +22,21 @@
    "fieldname": "qualification_criteria",
    "fieldtype": "Data",
    "label": "Qualification Criteria"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Qualified Members Report",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-06-21 12:44:35.989239",
+ "modified": "2023-06-22 16:28:16.364470",
  "modified_by": "Administrator",
  "module": "Vf Tumaini Sacco",
  "name": "Qualified Members Report",

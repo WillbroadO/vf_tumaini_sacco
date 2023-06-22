@@ -8,7 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "member",
-  "total_contribution"
+  "total_contribution",
+  "amended_from"
  ],
  "fields": [
   {
@@ -21,11 +22,21 @@
    "fieldname": "total_contribution",
    "fieldtype": "Currency",
    "label": "Total Contributions"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Member Contribution Report",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-06-21 12:13:21.577898",
+ "modified": "2023-06-22 16:28:37.169321",
  "modified_by": "Administrator",
  "module": "Vf Tumaini Sacco",
  "name": "Member Contribution Report",
