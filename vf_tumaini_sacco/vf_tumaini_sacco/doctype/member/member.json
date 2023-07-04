@@ -9,11 +9,13 @@
  "engine": "InnoDB",
  "field_order": [
   "payroll_number",
-  "employee_name",
   "sacco_number",
-  "sub_department",
+  "employee_name",
   "contributions",
-  "amended_from"
+  "column_break_qdtcg",
+  "sub_department",
+  "email_address",
+  "phone"
  ],
  "fields": [
   {
@@ -48,18 +50,24 @@
    "options": "Contributions"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Member",
-   "print_hide": 1,
-   "read_only": 1
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "column_break_qdtcg",
+   "fieldtype": "Column Break"
   }
  ],
- "is_submittable": 1,
  "links": [],
- "modified": "2023-06-22 16:29:22.725402",
+ "modified": "2023-06-27 10:54:13.725093",
  "modified_by": "Administrator",
  "module": "Vf Tumaini Sacco",
  "name": "Member",
@@ -108,5 +116,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "employee_name",
  "track_changes": 1
 }
